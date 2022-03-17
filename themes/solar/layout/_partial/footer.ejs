@@ -8,6 +8,94 @@
         <% for (var i in theme.nav) { %> 
           <li><a href="<%- url_for(theme.nav[i]) %>"><%= i %></a></li>
         <% } %>
+        
+
+        <!-- <li>
+          <a onclick="(e) => {e.preventDefault(); document.documentElement.className = (document.documentElement.className=='dark') ? 'light' : 'dark'; console.log(document.documentElement.className)}" href="">
+            <a onclick="(e) => {e.preventDefault();" href="">
+            <u id="toggle-scheme">Toggle scheme</u>
+          </a>
+        </li> -->
+        <script>
+          function toggleColorScheme(){
+
+            // console.log(localStorage.getItem("darkTheme"))
+
+            if(localStorage.getItem("darkTheme") == null){
+
+              const isNativeThemeDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+              localStorage.setItem("darkTheme", isNativeThemeDark == false)
+            }else{
+
+              let theme = localStorage.getItem("darkTheme")
+              theme = (theme == 'true')
+              // console.log(theme)
+              localStorage.setItem("darkTheme", !theme)
+            }
+
+            console.log(localStorage.getItem("darkTheme"))
+
+
+
+            let style = document.getElementById("colorThemeStyle")
+
+            if(localStorage.getItem("darkTheme") == 'false'){
+              style.innerHTML = ''
+              return;
+            }
+
+            style.innerHTML =`
+            body {
+                background-color: white;
+                color: black;
+                }
+              .content a{color: #313131}
+              article header .meta * {color: #000;}
+              .content h2, .content .h2 {color: #5fac4a;}
+              .blogtitel {color: #464646;}
+              #footer a {color: #1b1b1b;}
+              #footer {color: #222222;}
+              #header h1, #header .h1 {color: #2b2b2b;}
+              .post-list .post-item .meta {color: #000000;}
+              .banner{background: #ffffff;}
+            }
+            `
+            }
+        </script>
+
+
+        <button 
+        onclick="toggleColorScheme()" type="button">
+          ☀️
+        </button>
+
+        <script>
+          // window.matchMedia('(prefers-color-scheme: dark)').matches
+          // document.getElementById("toggle-scheme").innerHTML = ((document.documentElement.className!='dark') ? 'light' : 'dark') + " mode"
+        </script>
+
+        <style>
+          @media (prefers-color-scheme: light) {
+          body {
+              background-color: white;
+              color: black;
+              }
+            .content a{color: #313131}
+            article header .meta * {color: #000;}
+            .content h2, .content .h2 {color: #5fac4a;}
+            .blogtitel {color: #464646;}
+            #footer a {color: #1b1b1b;}
+            #footer {color: #222222;}
+            #header h1, #header .h1 {color: #2b2b2b;}
+            .post-list .post-item .meta {color: #000000;}
+          }
+
+        </style>
+
+        <style id="colorThemeStyle">
+
+        </style>
+
       </ul>
     </nav>
   </div>
