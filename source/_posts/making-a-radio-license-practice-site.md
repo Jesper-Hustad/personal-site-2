@@ -13,4 +13,8 @@ After stumbling across the local amateur radio club at my university I jokingly 
 
 The only problem? The previous year everyone failed the test. Unlike the US where there are 3 different license class privileges going from easy to hard (Technician, General, Amateur Extra) there is only one license type in Norway which gives you full privileges. I was really jumping in at the deep end.  
 
-I tried to find some practice sites that where easy to use. Radiokurs.no is good, but didn't give results immediately on exam questions.
+## Future plans  
+Hopefully I pass the test. Then I can try playing around with some fun projects I have in mind. 
+
+
+<!-- I tried to find some practice sites that where easy to use. Radiokurs.no is good, but didn't give results immediately on exam questions. -->
