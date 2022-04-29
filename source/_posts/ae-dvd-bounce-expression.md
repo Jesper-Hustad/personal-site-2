@@ -100,3 +100,5 @@ Pair the velocity property (`i`) for both expression to the slider, now the spee
 Now you have your very own bouncing logo effect, taste that sweet sweet nostalgia!.
 
 ![](ae-dvd-bounce-expression/cozy-pepe.png)
+
+
