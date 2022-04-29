@@ -6,4 +6,4 @@ tags: graphic
 
 This is just a placeholder page, please ignore.
 
-<img src="momus-docs-format-guide/docs-format-guide.png" alt="drawing" width="100"/>  
+<img src="momus-format-guide/image.png" alt="drawing" width="100"/>  
