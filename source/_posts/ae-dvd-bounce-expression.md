@@ -96,6 +96,10 @@ If `initial position` is paired to the null for position, it must also be done f
 Apply the `Slider Control` effect to your element and rename it to `velocity slider`.
 Pair the velocity property (`i`) for both expression to the slider, now the speed is always in sync.
 
+## When does it perfectly loop?
+Click this [link](https://codepen.io/jesper-hustad/pen/LYQpWEL?editors=0010) for a CodePen with some javascript code that finds the next loop frame and a timestamp. You will need to manually put in your data points so it isn't perfect. Unfortunately i couldn't find an easy way to do this in After Effects because it crashes. If anyone knows a way to run a resource intensive expression once please share!  
+
+
 ## Enjoy the nostalgia
 Now you have your very own bouncing logo effect, taste that sweet sweet nostalgia!.
 
