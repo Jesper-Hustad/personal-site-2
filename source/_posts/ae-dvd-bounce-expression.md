@@ -1,5 +1,6 @@
 ---
 title: Bouncing DVD logo expression in After Effects
+date: 2022/03/17
 ---
 
 This is our goal:
