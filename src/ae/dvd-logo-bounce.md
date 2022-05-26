@@ -86,7 +86,7 @@ var h = thisComp.height - lh;         //screen height
 var c = [Math.floor(t[0]/w), Math.floor(t[1]/h)];
 
 var bounces = c[0] + c[1]
-bounces * hueShift
+(bounces * hueShift) % 360
 ```
 
 ## Keeping both expression in sync
