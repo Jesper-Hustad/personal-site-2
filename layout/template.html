@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang=en-us>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href=favicon-32x32.png>
+  <link rel="stylesheet" href="code-highlighting.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Jesper Hustad</title>
+  <!-- <meta name=title content="Markdown Syntax Guide">
+  <meta name=description content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."> -->
+ 
+</head>
+
+<body>
+  <header><a href="/" class=title>
+      <h2>Jesper Hustad .com</h2>
+    </a>
+    <nav style="margin-top: -5px;">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+
+    </nav>
+  </header>
+
+  <!-- <hr style="border: 1px solid #c7c7c7;margin-top: 17px;"> -->
+  <main>
+    <h1 style="margin-bottom: 0px;">
+      {{title}}
+    </h1>
+    <i><time datetime=2020-01-03 pubdate>
+      {{ date }}
+    </time></i>
+    
+    <content>
+      <article class="markdown-body">
+        {{ content }}
+      </article>
+    </content>
+
+    <!-- <p><a href=>#ma</a><a href=/>#s</a></p> -->
+
+  </main>
+
+  <div class="commentbox"></div>
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+  <script>
+    const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    commentBox('5724334735753216-proj', {textColor: (dark) ? '#fff' : '#000'})</script>
+  <script>
+    const timer = setTimeout(() => {
+      const e = document.getElementById("commentbox")
+      if(Boolean(e.getAttribute("data-loaded"))){document.querySelector("#root > div > div.branding").remove(); clearTimeout(timer)}
+    }, 100);
+  </script>
+  <style>.branding{display: none;}</style>
+
+  <footer>Built with <a href="https://github.com/Jesper-Hustad/bssg">Based Static Site Generator</a></footer>
+</body>
+
+</html>
