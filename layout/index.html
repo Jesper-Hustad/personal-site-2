@@ -2,148 +2,31 @@
 <html lang=en-us>
 
 <head>
-  <meta charset=utf-8>
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href=favicon-32x32.png>
-  <link rel="stylesheet" href="code-highlighting.css">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <title>Jesper Hustad</title>
-  <!-- <meta name=title content="Markdown Syntax Guide">
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href=favicon-32x32.png>
+    <link rel="stylesheet" href="code-highlighting.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Jesper Hustad</title>
+    <!-- <meta name=title content="Markdown Syntax Guide">
   <meta name=description content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."> -->
- 
+
 </head>
 
 <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222
-  }
-
-  a {
-    color: #3273dc
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0
-  }
-
-  .title span {
-    font-weight: 400
-  }
-
-  nav a {
-    margin-right: 10px
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px
-  }
-
-  input {
-    font-size: 16px
-  }
-
-  content {
-    line-height: 1.6
-  }
-
-  table {
-    width: 100%
-  }
-
-  img {
-    max-width: 100%
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small
-  }
-
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset
-  }
-
-  ul.blog-posts li {
-    display: flex
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb
-  }
-
-  @media(prefers-color-scheme:dark) {
     body {
-      background-color: rgb(19 30 32);
-      color: #ddd
+        font-family: Verdana, sans-serif;
+        margin: auto;
+        padding: 20px;
+        max-width: 720px;
+        text-align: left;
+        background-color: #fff;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+        color: #444
     }
-
+    
     h1,
     h2,
     h3,
@@ -152,70 +35,181 @@
     h6,
     strong,
     b {
-      color: #eee
+        color: #222
     }
-
+    
     a {
-      color: #8cc2dd
+        color: #3273dc
     }
-
-    code {
-      background-color: #141414;
+    
+    .title {
+        text-decoration: none;
+        border: 0
     }
-
-    pre code {
-      color: #ddd
+    
+    .title span {
+        font-weight: 400
     }
-
-    blockquote {
-      color: #ccc
+    
+    nav a {
+        margin-right: 10px
     }
-
-    textarea,
+    
+    textarea {
+        width: 100%;
+        font-size: 16px
+    }
+    
     input {
-      background-color: #252525;
-      color: #ddd
+        font-size: 16px
     }
-
+    
+    content {
+        line-height: 1.6
+    }
+    
+    table {
+        width: 100%
+    }
+    
+    img {
+        max-width: 100%
+    }
+    
+    code {
+        padding: 2px 5px;
+        background-color: #f2f2f2
+    }
+    
+    pre code {
+        color: #222;
+        display: block;
+        padding: 20px;
+        white-space: pre-wrap;
+        font-size: 14px
+    }
+    
+    div.highlight pre {
+        background-color: initial;
+        color: initial
+    }
+    
+    div.highlight code {
+        background-color: unset;
+        color: unset
+    }
+    
+    blockquote {
+        border-left: 1px solid #999;
+        color: #222;
+        padding-left: 20px;
+        font-style: italic
+    }
+    
+    footer {
+        padding: 25px;
+        text-align: center
+    }
+    
     .helptext {
-      color: #aaa
+        color: #777;
+        font-size: small
     }
-  }
-  </style>
+    
+    .errorlist {
+        color: #eba613;
+        font-size: small
+    }
+    
+    ul.blog-posts {
+        list-style-type: none;
+        padding: unset
+    }
+    
+    ul.blog-posts li {
+        display: flex
+    }
+    
+    ul.blog-posts li span {
+        flex: 0 0 130px
+    }
+    
+    ul.blog-posts li a:visited {
+        color: #8b6fcb
+    }
+    
+    @media(prefers-color-scheme:dark) {
+        body {
+            background-color: rgb(19 30 32);
+            color: #ddd
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        strong,
+        b {
+            color: #eee
+        }
+        a {
+            color: #8cc2dd
+        }
+        code {
+            background-color: #141414;
+        }
+        pre code {
+            color: #ddd
+        }
+        blockquote {
+            color: #ccc
+        }
+        textarea,
+        input {
+            background-color: #252525;
+            color: #ddd
+        }
+        .helptext {
+            color: #aaa
+        }
+    }
+</style>
 
 
 
 <body>
-  <header><a href="/" class=title>
-      <h2>Jesper Hustad .com</h2>
-    </a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
+    <header>
+        <a href="/" class=title>
+            <h2>Jesper Hustad .com</h2>
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
 
-    </nav>
-  </header>
-  <main>
-    <h1 style="margin-bottom: 0px;">
-      
-    </h1>
-    <i><time datetime=2020-01-03 pubdate>
+        </nav>
+    </header>
+    <main>
+        <h1 style="margin-bottom: 0px;">
+
+        </h1>
+        <i><time datetime=2020-01-03 pubdate>
       
     </time></i>
-    
-    <content>
-      <article class="markdown-body">
-        <p>Hi and welcome to my page :)<br>Feel free to read some of my posts.</p>
-        <h2>Posts</h2>
-        {{ pages }}
-      </article>
-    </content>
 
-    <!-- <p><a href=>#ma</a><a href=/>#s</a></p> -->
+        <content>
+            <article class="markdown-body">
+                <p>Hi and welcome to my page :)<br>Feel free to read some of my posts.</p>
+                <h2>Posts</h2>
+                {{ pages }}
+            </article>
+        </content>
 
-  </main>
-  <br>
-  <footer>Built with <a href="https://github.com/Jesper-Hustad/bssg">Based Static Site Generator</a></footer>
+        <!-- <p><a href=>#ma</a><a href=/>#s</a></p> -->
+
+    </main>
+    <br>
+    <!-- <footer>Built with <a href="https://github.com/Jesper-Hustad/bssg">Based Static Site Generator</a></footer> -->
 </body>
 
 </html>
