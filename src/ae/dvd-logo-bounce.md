@@ -68,7 +68,7 @@ Note that this doesn't work with our custom start position! More on this bellow.
 
 ```javascript
 // REMEMBER TO MATCH BOTH EXPRESSIONS! 
-var hueShift = 50 //hue shift
+var hueShift = 50; //hue shift
 var v = 400;      //velocity
 var i = [0,0];    //initial position
 var o = 0;        //time offset
@@ -85,7 +85,7 @@ var h = thisComp.height - lh;         //screen height
 // cycle count in x and y
 var c = [Math.floor(t[0]/w), Math.floor(t[1]/h)];
 
-var bounces = c[0] + c[1]
+var bounces = c[0] + c[1];
 (bounces * hueShift) % 360
 ```
 
