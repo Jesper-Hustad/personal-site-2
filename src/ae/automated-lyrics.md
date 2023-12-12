@@ -1,5 +1,5 @@
 ---
-title: Automated Lyrics in After Effects
+title: Lyrics fully automated in After Effects
 date: 2023/12/11
 ---
 
