@@ -19,7 +19,7 @@ Here is how it will look like:
 ## Download pre-made After Effects file
 
 
-After Effects file: **[Download](./LYRICS-automated.aep)**
+After Effects file: **[Download](./LYRICS-automatic.aep)**
 
 This file includes all the automation required for synced lyrics.
 
